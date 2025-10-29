@@ -13,4 +13,3 @@ for i in range(num_empleados):
         mayor_salario = salario
         empleado_mayor_salario = nombre 
 print(f"el empleado con mayor salario es {empleado_mayor_salario} con un salario de {mayor_salario}")
-
