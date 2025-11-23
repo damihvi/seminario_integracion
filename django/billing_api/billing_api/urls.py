@@ -7,4 +7,5 @@ urlpatterns = [
     path('api/', include('users.urls')),      # Autenticación y usuarios
     path('api/', include('catalog.urls')),    # Catálogo (categorías, productos)
     path('api/', include('invoices.urls')),   # Facturas
+    path('api/', include('warehouses.urls')), # Almacenes
 ]
