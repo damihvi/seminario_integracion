@@ -1,3 +1,4 @@
+# invoices/apps.py
 from django.apps import AppConfig
 
 class InvoicesConfig(AppConfig):

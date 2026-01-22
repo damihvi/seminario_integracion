@@ -1,12 +1,3 @@
-"""
-pide salario y desempeño (1-5)
-si el desempeño es:
->4 =15%
->3 =10%
->2=5%
->1 = 2%
-"""
-
 salario = int(input("ingrese su salario"))
 desempeño = int(input("ingrese desempeño"))
 if desempeño > 4:
@@ -20,4 +11,4 @@ elif desempeño > 1:
 else:
     aumento = 0
 
-print("su salario:", salario + aumento)
+print("Su sueldo es",aumento + salario )

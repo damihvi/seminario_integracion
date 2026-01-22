@@ -4,13 +4,13 @@ pide salario y clasificar el cargo
 1000-2000 semi senior
 >2000 senior
 """
-salario = int(input("ingrese su salario: "))
 
-if salario < 1000:
-    print("junior")
-elif salario <= 2000:
-    print("semi senior")
+pide_salario=int (input("¿cuantos es tu salario "))
+
+if pide_salario <1000:
+    print("salario Junior ")
+elif pide_salario <=2000:
+    print("salario semi senior")
+
 else:
-    print("senior")
-
-    
+    print("salario senior")

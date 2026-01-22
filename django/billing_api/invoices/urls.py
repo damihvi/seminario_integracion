@@ -1,3 +1,4 @@
+# invoices/urls.py
 from rest_framework.routers import DefaultRouter
 from invoices.views.invoice import InvoiceViewSet
 from invoices.views.detail import InvoiceDetailViewSet

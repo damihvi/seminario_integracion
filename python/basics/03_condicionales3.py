@@ -1,21 +1,20 @@
 """
 vacaciones por antiguedad
-pide años de antiguedad y muestra dias de vacaciones segun
+pide años de antiguedad y muestra dias de vacaciones segun 
 <1=0
 <3=3
-<5=15=0
+<5=10
 >=5=15
 """
 
-años_antiguedad = int(input("ingrese años de antiguedad: "))
+anios_antiguedad= float(input("¿cuantos años de antiguedad tienes?: "))
 
-if años_antiguedad < 1:
-    print("0 dias de vacaiones")
-elif años_antiguedad < 3:
-    print("3 dias de vacaciones")
-elif años_antiguedad <5:
-    print("10 dias de vacaciones")
+if anios_antiguedad <1:
+    print("corresponde a 0 dias de vacaciones ")
+elif anios_antiguedad <3:
+    print("corresponde a 3 dias de vacaciones ")
+elif anios_antiguedad<5:
+    print("corresponde a 10 dias de vacaciones")
 else:
-    años_antiguedad >= 5
-    print("15 dias de vacaciones")
-    
+    anios_antiguedad >=5 
+    print("corresponde a 15 dias de vacaciones")

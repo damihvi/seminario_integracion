@@ -1,3 +1,4 @@
+# invoices/serializers/detail.py
 from rest_framework import serializers
 from invoices.models import InvoiceDetail
 from catalog.models import Product

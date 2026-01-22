@@ -1,0 +1,32 @@
+GIT_SSH_COMMAND='ssh -i ~/.ssh/github_deploy_react -o IdentitiesOnly=yes' \
+git clone git@github.com:Tatytyta/billing-ui.git /var/www/react-app
+
+
+
+root@vm-billing-api:~# ssh-keygen -t ed25519 -C "gh-actions-root-react" -f gh_actions_root_react
+Generating public/private ed25519 key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in gh_actions_root_react
+Your public key has been saved in gh_actions_root_react.pub
+The key fingerprint is:
+SHA256:DTy2bppeMkJ12s2GAcndJq+ZfPgyAp8W+d/JUvDBx7U gh-actions-root-react
+The key's randomart image is:
++--[ED25519 256]--+
+|     ..o .       |
+|      ooo o     .|
+|      . B+ . . ..|
+|     . = Xo o oE |
+|    . .oS==o o   |
+|   .. o.*.. o    |
+|    .oo++o .     |
+|     .=B+ oo .   |
+|     o+. +..+    |
++----[SHA256]-----+
+
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJG4N67PnkAX9MtgHR36AtGP4CRU6Z26MHVtILgqPiwO gh-actions-root-react
+
+
+sudo apt install -y certbot python3-certbot-nginx
+sudo certbot --nginx -d rodriguez-billing-ui.desarrollo-software.xyz
